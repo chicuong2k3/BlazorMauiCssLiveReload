@@ -42,6 +42,19 @@ This package is designed to fit directly into that workflow.
 
 Perfect for modern frontend stacks.
 
+
+## Known Limitations
+
+⚠️ Scoped CSS Hash Not Regenerated with `dotnet watch`.  
+
+When using Blazor scoped CSS (`.razor.css` files), adding new selectors 
+with `::deep` may not reflect changes without a full rebuild.
+
+**Recommendation:** Consider using Tailwind CSS instead. Tailwind's JIT compilation 
+regenerates CSS on every file change, making it fully compatible with `dotnet watch` 
+and `BlazorMauiCssLiveReload` for a seamless hot reload experience.
+
+
 ## Installation
 
 ### 1. Install the NuGet package
