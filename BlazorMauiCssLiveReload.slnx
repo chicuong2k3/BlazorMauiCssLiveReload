@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/samples/">
+    <Project Path="samples/BlazorMauiCssLiveReload.Sample.BlazorHybrid/BlazorMauiCssLiveReload.Sample.BlazorHybrid.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/BlazorMauiCssLiveReload/BlazorMauiCssLiveReload.csproj" />
+  </Folder>
+</Solution>

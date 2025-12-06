@@ -1,0 +1,19 @@
+﻿@inherits LayoutComponentBase
+@inject BlazorMauiCssLiveReload.CssLiveReloadService CssReload
+@inject IJSRuntime JSRuntime
+
+<MApp>
+    <MMain>
+        @Body
+    </MMain>
+</MApp>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await CssReload.ConnectAsync(JSRuntime);
+        }
+    }
+}
